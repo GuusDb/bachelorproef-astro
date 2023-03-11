@@ -1,0 +1,24 @@
+.navigation {
+	.navigation-toolbar {
+		padding: 1rem 4rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 2rem;
+
+		.logo-container {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+
+			.logo {
+				height: 1.2rem;
+			}
+		}
+		.link-container {
+			flex-grow: 1;
+			display: flex;
+			align-items: center;
+		}
+	}
+}

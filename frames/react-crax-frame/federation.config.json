@@ -1,0 +1,13 @@
+{
+	"name": "frame",
+	"exposes": {
+		"./getRefreshToken": "./src/authentication/getRefreshToken.ts",
+		"./AuthProvider": "./src/authentication/components/auth-provider.tsx",
+		"./useRoles": "./src/authentication/hooks/use-roles.ts",
+		"./LogoutButton": "./src/authentication/components/logout-button.tsx",
+		"./AuthConfig": "./src/authentication/types.ts"
+	},
+	"remotes": {
+		"test": "test@http://localhost:5000/remoteEntry.js"
+	}
+}
