@@ -71,6 +71,21 @@ module.exports = {
       filename: 'remoteEntry.js',
       ...federationConfig,
       shared: {
+        '@astrojs/react': {
+          singleton: true,
+          requiredVersion: dependencies['@astrojs/react'],
+        },
+        '@types/react': {
+          requiredVersion: dependencies['@types/react'],
+        },
+        '@types/react-dom': {
+          singleton: true,
+          requiredVersion: dependencies['@types/react-dom'],
+        },
+        astro: {
+          singleton: true,
+          requiredVersion: dependencies.astro,
+        },
         react: {
           singleton: true,
           requiredVersion: dependencies.react,
@@ -78,10 +93,6 @@ module.exports = {
         'react-dom': {
           singleton: true,
           requiredVersion: dependencies['react-dom'],
-        },
-        'react-router-dom': {
-          singleton: true,
-          requiredVersion: dependencies['react-router-dom'],
         },
       },
     }),
