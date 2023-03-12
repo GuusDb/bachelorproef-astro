@@ -14,7 +14,7 @@ module.exports = {
     publicPath: `http://localhost:${port}/`,
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.jsx', '.js', '.json'],
+    extensions: ['.tsx', '.ts', '.jsx', '.js', '.json', 'astro.js'],
   },
   devServer: {
     static: {
