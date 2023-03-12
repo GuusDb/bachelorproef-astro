@@ -66,10 +66,14 @@ module.exports = {
           singleton: true,
           requiredVersion: dependencies['react-router-dom'],
         },
+        'astro': {
+          singleton: true,
+          requiredVersion: dependencies['astro'],
+        },
       },
     }),
     new HtmlWebPackPlugin({
-      template: './public/index.html',
+      template: './src/pages/index.astro',
     }),
   ],
 };
