@@ -1,0 +1,8 @@
+{
+	"name": "frame",
+	"exposes": {
+	},
+	"remotes": {
+		"test": "test@http://localhost:5000/remoteEntry.js"
+	}
+}
