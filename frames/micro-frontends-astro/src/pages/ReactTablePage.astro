@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ReactTable } from '../features/tables/ReactTable';
+import NavBar from '../components/NavBar.astro';
+---
+
+<Layout title='button'>
+  <NavBar />
+  <ReactTable client:only='react' />
+</Layout>

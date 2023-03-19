@@ -3,18 +3,22 @@ lockfileVersion: 5.4
 specifiers:
   '@astrojs/react': ^1.1.1
   '@astrojs/solid-js': ^1.1.0
+  '@nanostores/react': ^0.4.1
   '@solidjs/router': ^0.4.3
   '@types/react': ^18.0.18
   astro: ^1.1.5
   gh-pages: ^4.0.0
+  nanostores: ^0.7.4
   react: ^18.0.0
   react-dom: ^18.0.0
   react-router-dom: '6'
   solid-js: ^1.4.3
 
 dependencies:
+  '@nanostores/react': 0.4.1_nkfnbc2tpc77iht7asm3uqwau4
   '@solidjs/router': 0.4.3_solid-js@1.5.4
   astro: 1.1.5
+  nanostores: 0.7.4
   react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
@@ -441,6 +445,18 @@ packages:
 
   /@ljharb/has-package-exports-patterns/0.0.2:
     resolution: {integrity: sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==}
+    dev: false
+
+  /@nanostores/react/0.4.1_nkfnbc2tpc77iht7asm3uqwau4:
+    resolution: {integrity: sha512-lsv0CYrMxczbXtoV/mxFVEoL/uVjEjseoP89srO/5yNAOkJka+dSFS7LYyWEbuvCPO7EgbtkvRpO5V+OztKQOw==}
+    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
+    peerDependencies:
+      nanostores: ^0.7.0
+      react: '>=18.0.0'
+    dependencies:
+      nanostores: 0.7.4
+      react: 18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
   /@nodelib/fs.scandir/2.1.5:
@@ -2399,6 +2415,11 @@ packages:
     hasBin: true
     dev: false
 
+  /nanostores/0.7.4:
+    resolution: {integrity: sha512-MBeUVt7NBcXqh7AGT+KSr3O0X/995CZsvcP2QEMP+PXFwb07qv3Vjyq+EX0yS8f12Vv3Tn2g/BvK/OZoMhJlOQ==}
+    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
+    dev: false
+
   /nlcst-to-string/2.0.4:
     resolution: {integrity: sha512-3x3jwTd6UPG7vi5k4GEzvxJ5rDA7hVUIRNHPblKuMVP9Z3xmlsd9cgLcpAMkc5uPOBna82EeshROFhsPkbnTZg==}
     dev: false
@@ -3296,6 +3317,14 @@ packages:
       browserslist: 4.21.3
       escalade: 3.1.1
       picocolors: 1.0.0
+
+  /use-sync-external-store/1.2.0_react@18.2.0:
+    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
