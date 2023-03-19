@@ -25,7 +25,9 @@ export function ReactTable() {
             <td scope='row'>{product.price}</td>
             <td scope='row'>{product.category}</td>
             <td scope='row'>{product.description}</td>
-            <td scope='row'>{product.image}</td>
+            <td scope='row'>
+              <img src={product.image} style={{ width: '8vw' }} />
+            </td>
           </tr>
         );
       })}

@@ -9,6 +9,14 @@ import { ReactTable } from '../features/tables/ReactTable';
 <Layout title='button'>
   <NavBar />
   <TableTitle />
-  <ReactButton client:only='react' />
+  <div class='getButton'>
+    <ReactButton client:only='react' />
+  </div>
   <ReactTable client:only='react' />
 </Layout>
+
+<style>
+  .getButton {
+    margin-left: 2rem;
+  }
+</style>
