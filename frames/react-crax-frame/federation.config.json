@@ -5,7 +5,10 @@
 		"./AuthProvider": "./src/authentication/components/auth-provider.tsx",
 		"./useRoles": "./src/authentication/hooks/use-roles.ts",
 		"./LogoutButton": "./src/authentication/components/logout-button.tsx",
-		"./AuthConfig": "./src/authentication/types.ts"
+		"./AuthConfig": "./src/authentication/types.ts",
+		"./apiTypes": "./src/types/api-types.ts",
+		"./useProductStore": "./src/hooks/use-product-store.tsx",
+		"./useRequest": "./src/api/hooks/use-requests.ts"
 	},
 	"remotes": {
 		"test": "test@http://localhost:5000/remoteEntry.js"
