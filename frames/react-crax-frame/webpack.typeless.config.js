@@ -58,6 +58,18 @@ module.exports = {
 					singleton: true,
 					requiredVersion: dependencies.react
 				},
+				zustand: {
+					singleton: true,
+					requiredVersion: dependencies.zustand
+				},
+				axios: {
+					singleton: true,
+					requiredVersion: dependencies.axios
+				},
+				'react-query': {
+					singleton: true,
+					requiredVersion: dependencies['react-query']
+				},
 				'react-dom': {
 					singleton: true,
 					requiredVersion: dependencies['react-dom']

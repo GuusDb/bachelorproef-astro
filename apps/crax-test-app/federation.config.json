@@ -1,7 +1,9 @@
 {
 	"name": "test",
 	"exposes": {
-		"./TestComp": "./src/test-comp.tsx"
+		"./TestComp": "./src/test-comp.tsx",
+		"./Button": "./src/components/Button.tsx",
+		"./Table": "./src/components/Table.tsx"
 	},
 	"remotes": {
 		"frame": "frame@http://localhost:4000/remoteEntry.js"

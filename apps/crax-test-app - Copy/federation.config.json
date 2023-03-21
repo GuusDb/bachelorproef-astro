@@ -1,0 +1,10 @@
+{
+	"name": "test",
+	"exposes": {
+		"./Table": "./src/components/Table.tsx",
+		"./Title": "./src/components/Title.tsx"
+	},
+	"remotes": {
+		"frame": "frame@http://localhost:4000/remoteEntry.js"
+	}
+}
