@@ -1,0 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { ReactButton } from '../features/requests/ReactButton';
+import NavBar from '../components/NavBar.astro';
+import TableTitle from '../components/TableTitle.astro';
+import { ReactTable } from '../features/tables/ReactTable';
+---
+
+<Layout title='button'>
+  <NavBar />
+  <TableTitle />
+  <div class='getButton'>
+    <ReactButton client:only='react' />
+  </div>
+  <ReactTable client:only='react' />
+</Layout>
+
+<style>
+  .getButton {
+    margin-left: 2rem;
+  }
+</style>
