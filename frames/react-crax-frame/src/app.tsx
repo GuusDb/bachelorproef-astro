@@ -5,22 +5,22 @@ import { theme } from './theme-override';
 import { Navigation, PageContainer } from './components';
 import { BrowserRouter } from 'react-router-dom';
 import { config } from './config';
-import {TestComp} from 'test/TestComp';
 
 import './app.scss';
+import { Button } from 'test/Button';
 
 export function App(): ReactElement {
 	return (
 		//<AuthProvider redirectUri={config.auth.redirectUri!}>
-			<BrowserRouter>
-				<ThemeProvider theme={theme}>
-					<CssBaseline />
-					<PageContainer>
-						<Navigation />
-						<TestComp />
-					</PageContainer>
-				</ThemeProvider>
-			</BrowserRouter>
+		<BrowserRouter>
+			<ThemeProvider theme={theme}>
+				<CssBaseline />
+				<PageContainer>
+					<Navigation />
+					<Button />
+				</PageContainer>
+			</ThemeProvider>
+		</BrowserRouter>
 		//</AuthProvider>
 	);
 }

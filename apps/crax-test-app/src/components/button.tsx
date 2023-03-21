@@ -1,21 +1,25 @@
 import { useState } from 'react';
+import { product } from 'types/frame/apiTypes';
+import { useProductStore } from 'frame/useProductStore';
+import { getAll } from '../api/getAll';
 
 export function Button() {
-	/* const {
-        isLoading,
-        data: immos,
-        isError,
-      } = useGet<produ[]>('Immo', '/immo');*/
-
 	const [clickCount, setClickCount] = useState<number>(0);
-	const handleClick = () => {
-		setClickCount(clickCount + 1);
+	const { loadProducts } = useProductStore();
+
+	const callAsync = async () => {
+		let res: product[] = await getAll();
+		loadProducts(res);
 	};
 
+	const handleClick = async () => {
+		setClickCount(clickCount + 1);
+		callAsync();
+	};
 	return (
 		<div>
 			<p>{clickCount}</p>
-			<button onClick={handleClick}></button>
+			<button onClick={handleClick}>click</button>
 		</div>
 	);
 }

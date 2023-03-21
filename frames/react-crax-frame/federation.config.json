@@ -8,7 +8,7 @@
 		"./AuthConfig": "./src/authentication/types.ts",
 		"./apiTypes": "./src/types/api-types.ts",
 		"./useProductStore": "./src/hooks/use-product-store.tsx",
-		"./useRequest": "./src/api/hooks/use-requests.ts"
+		"./getAll": "./src/api/getAll.ts"
 	},
 	"remotes": {
 		"test": "test@http://localhost:5000/remoteEntry.js"

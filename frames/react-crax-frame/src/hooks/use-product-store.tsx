@@ -1,12 +1,12 @@
 import create from 'zustand';
 import { product } from '~/types/api-types';
 
-type immoStoreState = {
+type ProductStoreState = {
 	products: product[];
 	loadProducts: (products: product[]) => void;
 };
 
-export const useImmoStore = create<immoStoreState>((set) => ({
+export const useProductStore = create<ProductStoreState>((set) => ({
 	products: [],
 	loadProducts: (products: product[]) => set(() => ({ products: products }))
 }));
