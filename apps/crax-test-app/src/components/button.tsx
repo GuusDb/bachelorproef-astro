@@ -17,7 +17,7 @@ export function Button() {
 		callAsync();
 	};
 	return (
-		<div>
+		<div style={{ marginLeft: '2rem' }}>
 			<p>{clickCount}</p>
 			<button onClick={handleClick}>click</button>
 		</div>

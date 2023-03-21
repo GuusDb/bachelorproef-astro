@@ -8,6 +8,7 @@ import { config } from './config';
 
 import './app.scss';
 import { Button } from 'test/Button';
+import { AppRoutes } from './components/app-routes';
 
 export function App(): ReactElement {
 	return (
@@ -17,7 +18,7 @@ export function App(): ReactElement {
 				<CssBaseline />
 				<PageContainer>
 					<Navigation />
-					<Button />
+					<AppRoutes />
 				</PageContainer>
 			</ThemeProvider>
 		</BrowserRouter>
