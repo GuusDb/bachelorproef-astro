@@ -1,2 +1,2 @@
-export * from './dts/components/Button';
-export { default } from './dts/components/Button';
+export * from './dts/components/button';
+export { default } from './dts/components/button';
