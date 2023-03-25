@@ -1,18 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import VueButton from '../features/requests/VueButton.vue';
 import NavBar from '../components/NavBar.astro';
 import TableTitle from '../components/TableTitle.astro';
-import { ReactTable } from '../features/tables/ReactTable';
+import VueTable from '../features/tables/VueTable.vue';
+import { ReactButton } from '../features/requests/ReactButton';
 ---
 
 <Layout title='button'>
   <NavBar />
   <TableTitle />
   <div class='getButton'>
-    <VueButton client:only='vue' />
+    <ReactButton client:only='react' />
   </div>
-  <ReactTable client:only='react' />
+  <VueTable client:only='vue' />
 </Layout>
 
 <style>

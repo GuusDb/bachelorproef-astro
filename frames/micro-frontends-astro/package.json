@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nanostores/react": "^0.4.1",
+    "@nanostores/vue": "^0.7.0",
     "@solidjs/router": "^0.4.3",
     "nanostores": "^0.7.4",
     "react-router-dom": "6"
