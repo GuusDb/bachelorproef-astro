@@ -1,4 +1,3 @@
-// store/users.ts
 import { atom } from 'nanostores';
 import type { product } from '../types/api-types';
 
