@@ -25,10 +25,10 @@ export function Navigation(): ReactElement {
 						shared
 					</MenuItem>
 					<MenuItem component={Link} to='/button'>
-						Hardware
+						Button
 					</MenuItem>
 					<MenuItem component={Link} to='/table'>
-						Contracts
+						Table
 					</MenuItem>
 				</Box>
 			</Toolbar>
