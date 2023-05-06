@@ -1,14 +1,24 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import React from "../../components/React";
+import Layout from '../../layouts/Layout.astro';
+import React from '../../components/React';
+import NavBar from '../../components/NavBar.astro';
 
 export function getStaticPaths() {
   // Define all the possible react routes so astro knows to redirect here
-  return [{ params: { route: undefined } }, { params: { route: "page1" } }];
+  return [{ params: { route: undefined } }, { params: { route: 'page1' } }];
 }
 ---
 
-<Layout title="React">
+<Layout title='React'>
+  <NavBar />
   <h1>This is rendered statically by Astro</h1>
-  <React client:only="react" />
+  <React client:only='react' />
 </Layout>
+
+<style>
+  ul,
+  li,
+  a {
+    color: black;
+  }
+</style>
